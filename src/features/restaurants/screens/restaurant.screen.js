@@ -12,10 +12,9 @@ import { RestaurantInfo } from "../components/restaurant-info-component";
 export const RestaurantScreen = () => (
   <SafeAreaView style={{ flex: 1, marginTop: StatusBar.currentHeight }}>
     <View style={styles.container}>
-      {/* <Text>Search</Text> */}
       <Searchbar placeholder="Search" />
     </View>
-    <View style={{ flex: 1, padding: 16, backgroundColor: "blue" }}>
+    <View style={{ flex: 1, padding: 16, backgroundColor: "white" }}>
       <RestaurantInfo />
     </View>
   </SafeAreaView>
@@ -23,7 +22,7 @@ export const RestaurantScreen = () => (
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "green",
+    backgroundColor: "white",
     alignItems: "center",
     justifyContent: "center",
     padding: 16,
