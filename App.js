@@ -9,13 +9,15 @@ import {
 } from "react-native";
 import { Searchbar } from "react-native-paper";
 import { RestaurantScreen } from "./src/features/restaurants/screens/restaurant.screen";
+import MainContainer from "./navigation/MainContainer";
 
 const isAndroid = Platform === "android";
-export default function App() {
+export default function App(navigation) {
   return (
     <>
       <RestaurantScreen />
       <ExpoStatusBar style="auto" />
+      {/* <MainContainer /> */}
     </>
   );
 }
